@@ -201,7 +201,7 @@
             for (var i in csCont) {
                 csEl.innerHTML += "<li>" + csCont[i].replace(/!~/g, "<code>").replace(/~!/g, "</code>") + "</li>";
                 try {
-                    if (csCont[i].length == 0) {throw "<li>Nothing coming soon</li>"}
+                    if (csCont[i].length == 0) throw "<li>Nothing coming soon</li>";
                 }
                 catch(none) {
                     csEl.innerHTML += none;
